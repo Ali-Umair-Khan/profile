@@ -10,6 +10,7 @@
     max-width:99vw;
     padding-block:3rem;
     margin-block:3rem;
+    background-color:black;
     
 
     @media (max-width:70rem){
@@ -44,7 +45,7 @@
             font-weight:300;
             // margin:1rem;
             font-size:3.2rem;
-            
+            color:white;
             // text-align:left;
             &:hover{
                 animation: moveY 2s linear infinite;
