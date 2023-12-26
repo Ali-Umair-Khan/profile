@@ -2,6 +2,8 @@
 .abilities{
     // height:100vh;
     padding:1rem;
+    padding-block:3rem;
+    margin-block:3rem;
     // margin:1rem;
     font-family: var(--font-family-4);
     display: grid;
@@ -19,6 +21,9 @@
         font-size:8rem;
         font-weight:600;
         color:grey;
+        @media (max-width:70rem){
+            font-size:4.8rem;
+        }
     }
     .abilities__right{
         font-size:3.2rem;
@@ -26,6 +31,9 @@
         flex-direction:column;
         justify-content:center;
         align-items:flex-start;
+        @media (max-width:70rem){
+            align-items:center;
+        }
         // text-align:left;
         h2{
             padding:1.5rem 1rem;

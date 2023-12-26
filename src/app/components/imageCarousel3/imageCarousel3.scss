@@ -79,6 +79,9 @@
       margin-inline: 5rem;
       // Apply perspective to create a 3D effect on each slide
       perspective: 10rem;
+      @media (max-width:70rem){
+        width:90vw;
+      }
 
       // Style the image inside each slide
       img {

@@ -7,7 +7,7 @@
     display:grid;
     place-items:center;
     padding: 2rem;
-    font-family:var(--font-family-4);
+    // font-family:var(--font-family-4);
 
     /* text-align:center; */
     /* background-color:rgb(170, 167, 167, 0.4); */
@@ -19,6 +19,9 @@
         font-size:7.2rem;
         text-transform: capitalize;
         text-align:center;
+        @media (max-width:70rem){
+            font-size:4.8rem;
+        }
     }
     .hero__faqs{
         display:flex;

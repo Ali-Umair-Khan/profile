@@ -8,6 +8,9 @@
     grid-template-columns:1fr 1fr;
     justify-content: start;
     max-width:99vw;
+    padding-block:3rem;
+    margin-block:3rem;
+    
 
     @media (max-width:70rem){
         grid-template-columns: 1fr;
@@ -20,6 +23,9 @@
         font-size:8rem;
         font-weight:600;
         color:grey;
+        @media (max-width:70rem){
+            font-size:4.8rem;
+        }
     }
     .tools__right{
         font-size:3.2rem;
@@ -27,12 +33,16 @@
         flex-direction:column;
         justify-content:center;
         align-items:flex-start;
+        @media (max-width:70rem){
+            align-items:center;
+        }
         // text-align:left;
         h2{
             padding:1.5rem 1rem;
             font-weight:300;
             // margin:1rem;
             font-size:3.2rem;
+            
             // text-align:left;
             &:hover{
                 animation: moveY 2s linear infinite;
