@@ -4,7 +4,7 @@ import styles from './page.module.css';
 import ResponsiveMenu from './components/navbar/resMenu2';
 import Hero from './components/hero/hero.jsx';
 import Abilities from './components/abilities/abilities.jsx';
-import Tools from './components/tools/Tools.jsx';
+import Tools from './components/tools/tools.jsx';
 import ImageSlider from './components/imageSlider/imageSlider.jsx';
 // import ImageCarousel from './components/imageCarousel/imageCarousel.jsx';
 // import Carousel from './components/imageCarousel2/imageCarousel2.jsx';
