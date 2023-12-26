@@ -1,0 +1,29 @@
+.skills{
+    display:grid;
+    place-items:center;
+    // gap:1rem;
+    padding:3rem 5rem;
+    // margin:1rem 1rem;
+    max-width:99vw;
+    margin:0 auto;
+    background-color: black;
+    height:70vh;
+    @media (max-width:70rem){
+        margin:0;
+    }
+    .skills__h1{
+        font-size:3.2rem;
+        text-align: justify;
+        color:white;
+        padding-bottom:0;
+        margin-bottom: 0;
+        // padding-block:10rem;
+    }
+    .skills__p{
+        font-size:2.4rem;
+        color:grey;
+        padding-top:0;
+        margin-top:0;
+        // padding-block:5rem;
+    }
+}
