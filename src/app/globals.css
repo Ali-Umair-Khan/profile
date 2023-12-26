@@ -31,7 +31,8 @@
     font-size: 62.5%;
     line-height: 1.6;
     /* margin: 0 auto; */
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family:var(--font-family-4);
     --color-blue: #29d;
     --color-green: #50C878;
     width:150rem;
@@ -42,14 +43,14 @@
   }
 
   body {
-    font-family: --font-primary;
+    /* font-family: --font-primary; */
+    font-family: var(--font-family-4);
     color: --color-grey-dark-2;
     color: --color-grey-light-1;
     font-weight: 300;
     line-height: 1.6;
     margin: 0 auto;
     background-color: white;
-  
   }
   
     img{

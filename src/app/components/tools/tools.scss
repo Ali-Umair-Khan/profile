@@ -3,11 +3,12 @@
     // height:100vh;
     padding:1rem;
     // margin:1rem;
-    font-family: var(--font-family-2);
+    font-family: var(--font-family-4);
     display: grid;
     grid-template-columns:1fr 1fr;
     justify-content: start;
     max-width:99vw;
+
     @media (max-width:70rem){
         grid-template-columns: 1fr;
     }
