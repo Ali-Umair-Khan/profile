@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import styles from './page.module.css';
 // import Navbar from './components/navbar/navbar.jsx';
@@ -12,6 +13,7 @@ import Carousel from './components/imageCarousel3/imageCarousel3.jsx';
 import FaqComponent from './components/faq/faq';
 import Skills from './components/skills/skills'
 import Footer from './components/footer/footer'
+import {Element} from 'react-scroll';
 
 
 
@@ -27,12 +29,18 @@ export default function Home() {
       <ResponsiveMenu/>
       {/* <Navbar/> */}
       <Hero/>
-      <Abilities/>
+      <Element name='services'>
+          <Abilities/>
+      </Element>
       <Tools/>
-      <ImageSlider/>
+      <Element name='work'>
+        <ImageSlider/>
+      </Element>
       {/* <ImageCarousel/> */}
       <Carousel/>
-      <FaqComponent/>
+      <Element name='charging'>
+        <FaqComponent/>
+      </Element>
       <Skills/>
       <Footer/>
 

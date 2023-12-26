@@ -1,6 +1,7 @@
 'use client'
 // import Link from 'next/link';
-import { Link } from "react-scroll"
+import { Link } from "react-scroll";
+// import {Link as NextLink} from 'next/link';
 import './style4.css';
 // import './navbar.scss';
 import React, {useState} from 'react';
@@ -12,6 +13,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const ResponsiveMenu = () => {
+  const linkUrl = 'https://calendly.com/aliumairkhan/30min';
+
     
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -51,11 +54,11 @@ const ResponsiveMenu = () => {
                       </Link>
                     </li>
                     <li onClick={handleMenuItemClick}>
-                      <Link to='charge'  smooth={true} duration={500}>
+                      <Link to='charging'  smooth={true} duration={500}>
                           <a>Charging</a>
                       </Link>
                     </li>
-                    <li onClick={handleMenuItemClick}><Link href='/'>Contact <FontAwesomeIcon icon={faUser} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></Link></li>
+                    <li onClick={handleMenuItemClick}><a href={linkUrl} target="_blank" rel="noopener noreferrer">Contact <FontAwesomeIcon icon={faUser} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a></li>
                     <label for='check' className='navbar__close'><FontAwesomeIcon icon={faWindowMinimize} style={{ fontSize: '3rem', color:'white'}}/></label>
                 </span>
                 <label for='check' className='navbar__open'><FontAwesomeIcon icon={faBars} style={{ fontSize: '3rem' }}/></label>

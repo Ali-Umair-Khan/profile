@@ -98,6 +98,7 @@
     transition: border-bottom 2s;
     font-family:var(--font-family-3);
     color:rgba(5, 64, 159, 0.9);
+    cursor: pointer;
 }
 
 /* .navbar__menu li a:nth-child(4){
