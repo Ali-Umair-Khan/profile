@@ -1,7 +1,7 @@
 
 
 .image__slider {
-    height:100vh;
+    // height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -9,6 +9,9 @@
     overflow:hidden;
     max-width:99vw;
     height:99vh;
+    @media (max-width:70rem){
+        display:none;
+    }
 }
 
 .image__slider img {
