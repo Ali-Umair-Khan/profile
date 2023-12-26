@@ -123,7 +123,7 @@ ul li {
         align-items: flex-start;
         padding:2rem;
         gap:1rem;
-        width:80%;
+        width:80vw;
         height:100vh;
         position:fixed;
         top:0;
@@ -143,6 +143,7 @@ ul li {
     }
     #check:checked ~ .navbar__menu {
         right:0;
+        transform: translateX(0);
     }
     .navbar__menu li a{
         margin-top:3rem;
@@ -157,10 +158,9 @@ ul li {
     .navbar{
         justify-content:space-between;
     }
-
-    
-    
+   
     .navbar__menu li {
         /* margin-top: 1rem; */
     }
 } 
+

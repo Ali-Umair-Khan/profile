@@ -20,6 +20,9 @@
         // padding-block:10rem;
         @media (max-width:70rem){
             font-size:2.4rem;
+            white-space:wrap;
+            padding-inline:1rem;
+            margin-inline:block;
         }
     }
     .skills__p{
