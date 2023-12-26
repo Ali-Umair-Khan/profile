@@ -131,6 +131,7 @@ ul li {
         z-index:200;
         background-color: rgba(5, 64, 159, 0.9);
         color:black;
+        margin: 0 auto;
         /* margin-top:2rem; */
         /* margin: 0rem auto; */
     }
