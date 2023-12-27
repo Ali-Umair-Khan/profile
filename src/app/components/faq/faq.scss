@@ -60,6 +60,7 @@
             width:100%;
             align-self:flex-start;
             max-width:99vw;
+            hyphens:auto;
             &:nth-child(2){
                 width:99%;
             }
@@ -86,6 +87,7 @@
             /* margin:0 auto; */
             // font-family:var(--font-family-4);
             margin:0;
+            hyphens:auto;
         
             
             /* text-align:center; */
