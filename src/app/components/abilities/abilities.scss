@@ -44,6 +44,7 @@
             font-weight:300;
             margin:1rem;
             font-size:3.2rem;
+            hyphens:auto;
             // text-align:left;
             &:hover{
                 animation: moveX 2s linear infinite;
