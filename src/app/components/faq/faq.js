@@ -23,9 +23,9 @@ const FaqComponent = () =>{
                     {/* {f.isOpen ? <h1>{f.answer}</h1> : ''} */}
                     <div onClick={()=>faqQues(i)}>
                         <h1 className='hero__faqs-question'>{f.question} </h1> 
-                        {f.isOpen ? <span className='hero__faqs-span'><FontAwesomeIcon icon={faWindowMinimize}/></span> : <span className='hero__faqs-span'><FontAwesomeIcon icon={faBars}/></span>}
+                        {/* {f.isOpen ? <span className='hero__faqs-span'><FontAwesomeIcon icon={faWindowMinimize}/></span> : <span className='hero__faqs-span'><FontAwesomeIcon icon={faBars}/></span>} */}
                     </div>
-                    {f.isOpen && <h1 className='hero__faqs-answer'>{f.answer}</h1>}
+                    {f.isOpen && <h1 className='hero__faqs-answer' onClick={()=>faqQues(i)}>{f.answer}</h1>}
                 </div>
             ))
         }
