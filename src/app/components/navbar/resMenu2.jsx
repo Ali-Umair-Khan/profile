@@ -2,7 +2,7 @@
 // import Link from 'next/link';
 import { Link } from "react-scroll";
 // import {Link as NextLink} from 'next/link';
-import './style4.css';
+import './style4.scss';
 // import './navbar.scss';
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,7 +15,6 @@ import {
 const ResponsiveMenu = () => {
   const linkUrl = 'https://calendly.com/aliumairkhan/30min';
 
-    
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -54,7 +53,7 @@ const ResponsiveMenu = () => {
                       </Link>
                     </li>
                     <li onClick={handleMenuItemClick}>
-                      <Link to='charging'  smooth={true} duration={500}>
+                      <Link to='charging' smooth={true} duration={500}>
                           <a>Charging</a>
                       </Link>
                     </li>

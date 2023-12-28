@@ -5,7 +5,7 @@ import './abilities.scss'
 const Abilities = () => {
     return(
         <section className='abilities'>
-            <h1 className='abilities__left'>Where we can work!</h1>
+            <h1 className='abilities__left'>Areas we can work!</h1>
             <div className='abilities__right'>
                 <h2>Web App Development & Design</h2>
                 <h2>Mobile App Design.</h2>

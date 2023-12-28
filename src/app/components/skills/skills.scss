@@ -15,8 +15,10 @@
         font-size:3.2rem;
         text-align: justify;
         color:white;
-        padding-bottom:0;
-        margin-bottom: 0;
+        padding-block:1rem;
+        margin-block: 1rem;
+        padding-inline:4rem;
+        margin-inline:4rem;
         // padding-block:10rem;
         @media (max-width:70rem){
             font-size:2.4rem;
@@ -25,6 +27,8 @@
             margin-inline:1rem;
             hyphens:auto;
             text-align:left;
+            padding-block:1rem;
+            margin-block: 1rem;
         }
     }
     .skills__p{
@@ -34,11 +38,15 @@
         margin-top:0;
         padding-inline:1rem;
         margin-inline:1rem;
+        padding-block:1rem;
+        margin-block: 1rem;
         // padding-block:5rem;
         @media (max-width:70rem){
             font-size:1.6rem;
             hyphens:auto;
             text-align:left;
+            padding-block:1rem;
+            margin-block: 1rem;
         }
     }
 }
