@@ -8,7 +8,7 @@ import {useState} from 'react';
 import './faq.scss'
 const FaqComponent = () =>{
     const [faqs,setFaqs]=useState(faqData);
-    console.log(faqs);
+    // console.log(faqs);
     const faqQues = (i) => {
             const updatedFaqs = [...faqData];
             updatedFaqs[i].isOpen = !updatedFaqs[i].isOpen;

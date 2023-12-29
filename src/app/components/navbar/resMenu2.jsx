@@ -22,8 +22,15 @@ const ResponsiveMenu = () => {
   };
 
   const handleMenuItemClick = () => {
-    setMenuOpen(false); // Close the menu when a menu item is clicked
-  };
+    // setTimeout(() => {
+      setMenuOpen(false);
+    // }, 50); // Adjust the delay time as needed
+
+  //   Events.scrollEvent.register('end', () => {
+  //   setMenuOpen(false);
+  // });
+
+   };
 
   // onChange={handleMenuToggle}
     return(
@@ -31,33 +38,33 @@ const ResponsiveMenu = () => {
             <ul className='navbar'>
                 <div className='navbar__left' onClick={handleMenuItemClick}>
                     <div className='navbar__left-image'>
-                        <img src='/ak.gif' alt=""/>
+                        <img src='/ak.gif' alt="AUK"/>
                     </div>
                     <h2 className='navbar__left-name'>Ali Umair Khan</h2>
                 </div>
                 {/* <li onClick={handleMenuItemClick} className='navbar__logo'><Link href='/'><img src='ak.gif' alt="" /></Link></li> */}
                 <input type='checkbox' id='check' className='navbar__checkbox' checked={menuOpen} onChange={handleMenuToggle}/>
                 <span className='navbar__menu'>
-                    <li onClick={handleMenuItemClick}>
+                    {/* <li onClick={handleMenuItemClick}>
                       <Link to='me'  smooth={true} duration={500}>
-                          <a>Who I am</a>
+                          <a onClick={handleMenuItemClick}>Who I am</a>
                       </Link>
-                    </li>
+                    </li> */}
                     <li onClick={handleMenuItemClick}>
                       <Link to='work'  smooth={true} duration={500}>
-                          <a>Work</a>
+                          <a onClick={handleMenuItemClick}>Work</a>
                       </Link></li>
                     <li onClick={handleMenuItemClick}>
                       <Link to='services'  smooth={true} duration={500}>
-                          <a>Services</a>
+                          <a onClick={handleMenuItemClick}>Services</a>
                       </Link>
                     </li>
                     <li onClick={handleMenuItemClick}>
                       <Link to='charging' smooth={true} duration={500}>
-                          <a>Charging</a>
+                          <a onClick={handleMenuItemClick}>Charging</a>
                       </Link>
                     </li>
-                    <li onClick={handleMenuItemClick}><a href={linkUrl} target="_blank" rel="noopener noreferrer">Contact <FontAwesomeIcon icon={faUser} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a></li>
+                    <li onClick={handleMenuItemClick}><a href={linkUrl} target="_blank" rel="noopener noreferrer" onClick={handleMenuItemClick}>Contact <FontAwesomeIcon icon={faUser} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a></li>
                     <label for='check' className='navbar__close'><FontAwesomeIcon icon={faWindowMinimize} style={{ fontSize: '3rem', color:'white'}}/></label>
                 </span>
                 <label for='check' className='navbar__open'><FontAwesomeIcon icon={faBars} style={{ fontSize: '3rem' }}/></label>
