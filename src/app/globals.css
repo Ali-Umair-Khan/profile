@@ -35,7 +35,7 @@
     font-family:var(--font-family-4);
     --color-blue: #29d;
     --color-green: #50C878;
-    width:150rem;
+    max-width:150rem;
     margin:0 auto;
     /* vertical-align: baseline; */
     /* background-color:var(--color-green); */

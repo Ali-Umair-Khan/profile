@@ -27,23 +27,26 @@ export default function Home() {
   return (
   <main className='main'>
       <ResponsiveMenu/>
-      {/* <Navbar/> */}
-      <Hero/>
+      <Hero/> 
       <Element name='services'>
           <Abilities/>
       </Element>
       <Tools/>
       <Element name='work'>
         <ImageSlider/>
-      </Element>
-      {/* <ImageCarousel/> */}
-      <Carousel/>
+      </Element> 
+       <Carousel/>
       <Element name='charging'>
         <FaqComponent/>
       </Element>
       <Skills/>
-      <Footer/>
+      <Footer/> 
 
   </main>
   )
 }
+      
+
+// /* <ImageCarousel/> */
+
+//       /* <Navbar/> */

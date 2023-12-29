@@ -7,7 +7,7 @@
     padding:1rem;
     flex-wrap:wrap;
     /* width:100%; */
-    overflow: hidden;
+    overflow-x: hidden;
     max-width:99vw;
     font-family:var(--font-family-4);
     list-style-type: none;
@@ -15,7 +15,9 @@
         justify-content:space-between;
     }
     @media (min-width:30rem) and (max-width:40rem){
-        display:block;
+        // display:block;
+        // width:44rem;
+        overflow-x:hidden;
     }
 
     .navbar__left{
@@ -55,10 +57,10 @@
                 transform: translateX(0);
             }
         }
-        @media (min-width:35rem) and (max-width:40rem){
+        @media (min-width:35rem) and (max-width:44rem){
             &:checked ~ .navbar__menu {
-                right:-100%;
-                transform: translateX(-50%);
+                right:-0;
+                transform: translateX(0);
             }
         }
 
@@ -77,8 +79,26 @@
         & > * {
             padding:2rem;
         }
-        @media (min-width:30rem) and (max-width:40rem){
-            display:block;
+        @media (min-width:30rem) and (max-width:45rem){
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding:2rem;
+            gap:1rem;
+            width:100vw;
+            height:100vh;
+            position:fixed;
+            top:0;
+            right:100%;
+            z-index:200;
+            background-color: rgba(5, 64, 159, 0.9);
+            color:black;
+            margin: 0 auto;
+            transform: translateX(0);
+        /* margin-top:2rem; */
+        /* margin: 0rem auto; */
+            // display:block;
         }
 
         @media (max-width:76rem){
@@ -193,56 +213,56 @@
     list-style-type: none;
 } */
 
- @media (max-width:76rem){
-    .navbar__menu{
-        display:flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding:2rem;
-        gap:1rem;
-        width:100vw;
-        height:100vh;
-        position:fixed;
-        top:0;
-        right:100%;
-        z-index:200;
-        background-color: rgba(5, 64, 159, 0.9);
-        color:black;
-        margin: 0 auto;
-        transform: translateX(0);
-        /* margin-top:2rem; */
-        /* margin: 0rem auto; */
-    }
+//  @media (max-width:76rem){
+//     .navbar__menu{
+//         display:flex;
+//         flex-direction: column;
+//         justify-content: flex-start;
+//         align-items: flex-start;
+//         padding:2rem;
+//         gap:1rem;
+//         width:100vw;
+//         height:100vh;
+//         position:fixed;
+//         top:0;
+//         right:100%;
+//         z-index:200;
+//         background-color: rgba(5, 64, 159, 0.9);
+//         color:black;
+//         margin: 0 auto;
+//         transform: translateX(0);
+//         /* margin-top:2rem; */
+//         /* margin: 0rem auto; */
+//     }
 
-    .navbar__menu > * {
-        padding:2rem;
-    }
-    .navbar__close, .navbar__open {
-        display:block;
-    }
-    #check:checked ~ .navbar__menu {
-        right:0;
-        transform: translateX(0);
-    }
-    .navbar__menu li a{
-        margin-top:3rem;
-        color:#ffffff;
-    }
+//     .navbar__menu > * {
+//         padding:2rem;
+//     }
+//     .navbar__close, .navbar__open {
+//         display:block;
+//     }
+//     #check:checked ~ .navbar__menu {
+//         right:0;
+//         transform: translateX(0);
+//     }
+//     .navbar__menu li a{
+//         margin-top:3rem;
+//         color:#ffffff;
+//     }
 
-    /* .navbar__menu li:nth-child(4){
-       padding:0.5rem 1rem;
+//     /* .navbar__menu li:nth-child(4){
+//        padding:0.5rem 1rem;
        
-    } */
+//     } */
 
-    /* .navbar{
-        justify-content:space-between;
-    } */
+//     /* .navbar{
+//         justify-content:space-between;
+//     } */
    
-    /* .navbar__menu li { */
-        /* margin-top: 1rem; */
-    /* } */
-} 
+//     /* .navbar__menu li { */
+//         /* margin-top: 1rem; */
+//     /* } */
+// } 
 
 
 /* @media (min-width:30rem) and (max-width:40rem){

@@ -25,7 +25,7 @@ const ResponsiveMenu = () => {
     setMenuOpen(false); // Close the menu when a menu item is clicked
   };
 
-
+  // onChange={handleMenuToggle}
     return(
         <nav>
             <ul className='navbar'>
