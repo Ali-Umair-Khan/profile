@@ -53,14 +53,38 @@
     #check {
         @media (max-width:76rem){
             &:checked ~ .navbar__menu {
-                right:0;
+                right:70%;
                 transform: translateX(0);
+                animation: fromLeft 2s cubic-bezier(0.175, 0.185, 0.72, 1.8575) 1;
+        
+                @keyframes fromLeft {
+                    0% {
+                        transform: translateX(100%);
+                        right:100%;
+                    }
+                    100% {
+                        transform: translateX(0);
+                        right:70%;
+                    }
+                }
             }
         }
         @media (min-width:35rem) and (max-width:44rem){
             &:checked ~ .navbar__menu {
-                right:-0;
+                right:70%;
                 transform: translateX(0);
+                animation: fromLeft 2s cubic-bezier(0.175, 0.185, 0.72, 1.8575) 1;
+        
+                @keyframes fromLeft {
+                    0% {
+                        transform: translateX(100%);
+                        right:100%;
+                    }
+                    100% {
+                        transform: translateX(0);
+                        right:70%;
+                    }
+                }
             }
         }
 
@@ -111,7 +135,7 @@
             align-items: flex-start;
             padding:2rem;
             gap:1rem;
-            width:100vw;
+            width:30vw;
             height:100vh;
             position:fixed;
             top:0;
