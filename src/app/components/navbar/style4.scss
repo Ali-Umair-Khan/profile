@@ -57,7 +57,7 @@
                 // transform: translateX(20%);
                 animation: fromLeft 2s cubic-bezier(0.175, 0.185, 0.72, 1.8575) 1;
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 80%);
-                border-radius: 0 20px 20px 0;
+                border-radius: 0 20px 20px 20px 20px;
                 // mask: url(#curved-mask);
 
                 @keyframes fromLeft {
