@@ -77,7 +77,7 @@
                 right:0;
                 // transform: translateX(100%);
                 animation: fromLeft 2s cubic-bezier(0.175, 0.185, 0.72, 1.8575) 1;
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 80%);
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 60%);
                 border-radius: 0 20px 20px 0;
         
                 @keyframes fromLeft {
