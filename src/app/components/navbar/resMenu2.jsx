@@ -33,8 +33,18 @@ const ResponsiveMenu = () => {
    };
 
   // onChange={handleMenuToggle}
+  // style={{ mask: 'url(#curved-mask)' }}
     return(
         <nav>
+            {/* <svg width="0" height="0" style={{ position: 'absolute', visibility: 'hidden' }}>
+            <defs>
+              <mask id="curved-mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+                <rect width="1" height="1" fill="white" />
+                <rect width="1" height="0.8" x="0" y="0.2" fill="black" />
+                <circle cx="0.2" cy="0.2" r="0.2" fill="white" />
+              </mask>
+            </defs>
+            </svg> */}
             <ul className='navbar'>
                 <div className='navbar__left' onClick={handleMenuItemClick}>
                     <div className='navbar__left-image'>
@@ -65,9 +75,9 @@ const ResponsiveMenu = () => {
                       </Link>
                     </li>
                     <li onClick={handleMenuItemClick}><a href={linkUrl} target="_blank" rel="noopener noreferrer" onClick={handleMenuItemClick}>Contact <FontAwesomeIcon icon={faUser} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a></li>
-                    <label for='check' className='navbar__close'><FontAwesomeIcon icon={faWindowMinimize} style={{ fontSize: '3rem', color:'white'}}/></label>
+                    <label htmlFor='check' className='navbar__close'><FontAwesomeIcon icon={faWindowMinimize} style={{ fontSize: '3rem', color:'white'}}/></label>
                 </span>
-                <label for='check' className='navbar__open'><FontAwesomeIcon icon={faBars} style={{ fontSize: '3rem' }}/></label>
+                <label htmlFor='check' className='navbar__open'><FontAwesomeIcon icon={faBars} style={{ fontSize: '3rem' }}/></label>
             </ul>
         </nav>
     )
