@@ -53,41 +53,45 @@
     #check {
         @media (max-width:76rem){
             &:checked ~ .navbar__menu {
-                right:0;
+                right:0%;
                 // transform: translateX(20%);
-                animation: fromLeft 2s cubic-bezier(0.175, 0.185, 0.72, 1.8575) 1;
+                animation: fromRight 2s cubic-bezier(0.975, 0.985, 0.72, 1.8575) 1;
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 60%);
-                border-radius: 0 20px 20px 20px 20px;
+                border-radius: 10px 10px 50px 20px;
+                // border-radius:0 0 0 0;
                 // mask: url(#curved-mask);
 
-                @keyframes fromLeft {
+                @keyframes fromRight {
                     0% {
-                        transform: translateX(0);
+                        // transform: translateX(0);
                         right:100%;
+                        // border-radius:0 0 0 0;
                     }
                     100% {
-                        // transform: translateX(20%);
-                        right:0;
+                        right:0%;
+                        transform: translateX(50%);
+
+                        // border-radius: 100px 50px 500px 200px;
                     }
                 }
             }
         }
         @media (min-width:35rem) and (max-width:44rem){
             &:checked ~ .navbar__menu {
-                right:0;
+                right:0%;
                 // transform: translateX(100%);
-                animation: fromLeft 2s cubic-bezier(0.175, 0.185, 0.72, 1.8575) 1;
+                animation: fromRight 2s cubic-bezier(0.175, 0.185, 0.72, 1.8575) 1;
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 60%);
-                border-radius: 0 20px 20px 0;
+                border-radius: 10px 10px 50px 20px;
         
-                @keyframes fromLeft {
+                @keyframes fromRight {
                     0% {
                         // transform: translateX(0);
                         right:100%;
                     }
                     100% {
-                        // transform: translateX(100%);
-                        right:0;
+                        right:0%;
+                        // transform: translateX(-100%);
                     }
                 }
             }
