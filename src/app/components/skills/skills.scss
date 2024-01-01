@@ -1,34 +1,38 @@
 .skills{
     display:grid;
     place-items:center;
+    place-content:center;
     // gap:1rem;
-    padding:3rem;
+    padding:1rem;
     // margin:1rem 1rem;
     max-width:99vw;
     margin:0 auto;
     background-color: black;
     // height:70vh;
+    height:80vh;
     @media (max-width:70rem){
         margin:0;
+        // height:fit-content;
+        // height:max-content;
     }
     .skills__h1{
         font-size:3.2rem;
         text-align: justify;
         color:white;
-        padding-block:1rem;
-        margin-block: 1rem;
-        padding-inline:4rem;
-        margin-inline:4rem;
+        // padding-block:1rem;
+        // margin-block: 1rem;
+        padding-inline:2rem;
+        margin-inline:2rem;
         // padding-block:10rem;
         @media (max-width:70rem){
             font-size:2.4rem;
             white-space:wrap;
-            padding-inline:1rem;
-            margin-inline:1rem;
+            // padding-inline:1rem;
+            // margin-inline:1rem;
             hyphens:auto;
             text-align:left;
-            padding-block:1rem;
-            margin-block: 1rem;
+            // padding-block:1rem;
+            // margin-block: 1rem;
         }
     }
     .skills__p{
@@ -36,10 +40,11 @@
         color:grey;
         padding-top:0;
         margin-top:0;
-        padding-inline:1rem;
-        margin-inline:1rem;
-        padding-block:1rem;
-        margin-block: 1rem;
+        padding:2rem;
+        padding-inline:2rem;
+        margin-inline:2rem;
+        // padding-block:1rem;
+        // margin-block: 1rem;
         // padding-block:5rem;
         @media (max-width:70rem){
             font-size:1.6rem;

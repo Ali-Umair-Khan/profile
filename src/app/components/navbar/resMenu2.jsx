@@ -37,14 +37,14 @@ const ResponsiveMenu = () => {
     return(
         <nav>
             {/* <svg width="0" height="0" style={{ position: 'absolute', visibility: 'hidden' }}>
-            <defs>
+            {/* <defs>
               <mask id="curved-mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
                 <rect width="1" height="1" fill="white" />
                 <rect width="1" height="0.8" x="0" y="0.2" fill="black" />
                 <circle cx="0.2" cy="0.2" r="0.2" fill="white" />
               </mask>
-            </defs>
-            </svg> */}
+            </defs> */}
+            {/* </svg>  */}
             <ul className='navbar'>
                 <div className='navbar__left' onClick={handleMenuItemClick}>
                     <div className='navbar__left-image'>
