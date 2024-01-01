@@ -4,7 +4,8 @@ import { Link } from "react-scroll";
 // import {Link as NextLink} from 'next/link';
 import './style4.scss';
 // import './navbar.scss';
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
+import { useClickAway } from "react-use";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWindowMinimize,
@@ -34,6 +35,13 @@ const ResponsiveMenu = () => {
 
   // onChange={handleMenuToggle}
   // style={{ mask: 'url(#curved-mask)' }}
+
+  // Ref to store a reference to the DOM element
+  const ref = useRef(null);
+
+  // Custom hook to detect clicks outside of the navigation and close it
+  useClickAway(ref, handleMenuItemClick);
+
     return(
         <nav>
             {/* <svg width="0" height="0" style={{ position: 'absolute', visibility: 'hidden' }}>
@@ -54,7 +62,7 @@ const ResponsiveMenu = () => {
                 </div>
                 {/* <li onClick={handleMenuItemClick} className='navbar__logo'><Link href='/'><img src='ak.gif' alt="" /></Link></li> */}
                 <input type='checkbox' id='check' className='navbar__checkbox' checked={menuOpen} onChange={handleMenuToggle}/>
-                <span className='navbar__menu'>
+                <span className='navbar__menu' ref={ref}>
                     {/* <li onClick={handleMenuItemClick}>
                       <Link to='me'  smooth={true} duration={500}>
                           <a onClick={handleMenuItemClick}>Who I am</a>
