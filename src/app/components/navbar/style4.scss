@@ -155,7 +155,7 @@ nav{
         @media (max-width:76rem){
             display:flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             padding-inline:0.2rem;
             gap:1rem;
@@ -171,7 +171,7 @@ nav{
             transform: translateX(0);
             & > *:not(:last-child) {
                 padding-inline:0.2rem;
-                margin-block:5rem;
+                margin-block:2rem;
             }
         /* margin-top:2rem; */
         /* margin: 0rem auto; */
@@ -193,7 +193,7 @@ nav{
                 border-bottom-color: #030c2b;
             }
             @media (max-width:76rem){
-                margin-top:3rem;
+                // margin-top:3rem;
                 color:#ffffff;
                 // color: darkcyan;
             }
