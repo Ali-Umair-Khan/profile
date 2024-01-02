@@ -22,7 +22,7 @@ const FaqComponent = () =>{
           ref={ref}
           style={{
         //   height: "100vh",
-          background: isInView ? "white" : "gray",
+          background: isInView ? "white" : "lightgray",
           color: isInView ? 'black' : 'gray',
           transition: "10s background, 5s color",
           }}

@@ -28,7 +28,7 @@ const Carousel = () => {
         ref={ref}
         style={{
         //   height: "100vh",
-        background: isInView ? "white" : "lightcyan",
+        background: isInView ? "white" : "aliceblue",
         color: isInView ? 'black' : 'gray',
         transition: "10s background, 5s color",
         }}
