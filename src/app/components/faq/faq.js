@@ -1,12 +1,15 @@
 'use client'
+import {motion,useInView} from 'framer-motion';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faPlus,faMinus,faWindowMinimize,faBars
 } from "@fortawesome/free-solid-svg-icons";
 import {faqData} from './data';
-import {useState} from 'react';
+import {useState,useRef} from 'react';
 import './faq.scss'
 const FaqComponent = () =>{
+    const ref = useRef(null);
+    const isInView = useInView(ref);
     const [faqs,setFaqs]=useState(faqData);
     // console.log(faqs);
     const faqQues = (i) => {
@@ -15,7 +18,16 @@ const FaqComponent = () =>{
             setFaqs(updatedFaqs);
     }
     return(
-        <div className='faq'>
+        <div 
+          ref={ref}
+          style={{
+        //   height: "100vh",
+          background: isInView ? "white" : "blue",
+          color: isInView ? 'black' : 'gray',
+          transition: "10s background, 5s color",
+          }}
+          className='faq'
+        >
         <h1 className='faq__h1'>Frequently asked questions</h1>
             {faqs.map((f,i)=>(
                 <div key={i} className='hero__faqs'>
