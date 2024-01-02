@@ -155,11 +155,12 @@ nav{
         @media (max-width:76rem){
             display:flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             padding-inline:0.2rem;
             gap:1rem;
             width:40vw;
+            padding-top:5rem;
             height:100vh;
             position:fixed;
             top:0;
