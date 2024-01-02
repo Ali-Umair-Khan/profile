@@ -10,7 +10,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWindowMinimize,
   faBars,
-  faUser
+  faUser,
+  faDollarSign,
+  faHurricane,
+  faAddressBook,
+  faWrench
 } from "@fortawesome/free-solid-svg-icons";
 
 const ResponsiveMenu = () => {
@@ -70,19 +74,19 @@ const ResponsiveMenu = () => {
                     </li> */}
                     <li onClick={handleMenuItemClick}>
                       <Link to='work'  smooth={true} duration={500}>
-                          <a onClick={handleMenuItemClick}>Work</a>
+                          <a onClick={handleMenuItemClick}>Work <FontAwesomeIcon icon={faHurricane} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a>
                       </Link></li>
                     <li onClick={handleMenuItemClick}>
                       <Link to='services'  smooth={true} duration={500}>
-                          <a onClick={handleMenuItemClick}>Services</a>
+                          <a onClick={handleMenuItemClick}>Services <FontAwesomeIcon icon={faWrench} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a>
                       </Link>
                     </li>
                     <li onClick={handleMenuItemClick}>
                       <Link to='charging' smooth={true} duration={500}>
-                          <a onClick={handleMenuItemClick}>Charging</a>
+                          <a onClick={handleMenuItemClick}>Charging <FontAwesomeIcon icon={faDollarSign} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a>
                       </Link>
                     </li>
-                    <li onClick={handleMenuItemClick}><a href={linkUrl} target="_blank" rel="noopener noreferrer" onClick={handleMenuItemClick}>Contact <FontAwesomeIcon icon={faUser} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a></li>
+                    <li onClick={handleMenuItemClick}><a href={linkUrl} target="_blank" rel="noopener noreferrer" onClick={handleMenuItemClick}>Contact <FontAwesomeIcon icon={faAddressBook} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a></li>
                     <label htmlFor='check' className='navbar__close'><FontAwesomeIcon icon={faWindowMinimize} style={{ fontSize: '3rem', color:'white'}}/></label>
                 </span>
                 <label htmlFor='check' className='navbar__open'><FontAwesomeIcon icon={faBars} style={{ fontSize: '3rem' }}/></label>
