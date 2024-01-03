@@ -14,7 +14,7 @@ const Hero = () => {
           ref={ref}
           style={{
           //   height: "100vh",
-          background: isInView ? "white" : "aliceblue",
+          background: isInView ? "whitesmoke" : "aliceblue",
           //   color: isInView ? 'white' : 'black',
           transition: "10s background",
           }}

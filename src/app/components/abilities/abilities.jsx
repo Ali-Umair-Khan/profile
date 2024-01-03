@@ -14,9 +14,9 @@ const Abilities = () => {
         ref={ref}
           style={{
         //   height: "100vh",
-          background: isInView ? "white" : "gray",
+          background: isInView ? "aliceblue" : "lightcyan",
           color: isInView ? 'black' : 'gray',
-          transition: "10s background, 5s color",
+          transition: "10s background",
           }}
         className='abilities'>
             <h1 className='abilities__left'>Areas we can work!</h1>
