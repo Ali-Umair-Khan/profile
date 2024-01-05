@@ -40,7 +40,7 @@ const Hero = () => {
 
   const [ refh1, inViewh1] = useInViewRIO({
     /* Optional options */
-    threshold: 0.0.5,
+    threshold: 0.5,
     // "initialInView": true,
     rootMargin: '-100px 0px', // Adjust as needed
   });
@@ -87,8 +87,8 @@ const Hero = () => {
           ref={refFM}
           style={{
           //   height: "100vh",
-          background: isInViewFM ? 'black' : '#808B96',          //   color: inpm run devsInView ? 'white' : 'black',
-          transition: "10s background",
+          background: isInViewFM ? 'black' : '#033F73',          //   color: inpm run devsInView ? 'white' : 'black',
+          transition: "5s background",
           }}
           className='hero'
     >
