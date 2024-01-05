@@ -42,19 +42,19 @@ const Hero = () => {
     /* Optional options */
     threshold: 0.5,
     // "initialInView": true,
-    rootMargin: '-100px 0px', // Adjust as needed
+    rootMargin: '-70px 0px', // Adjust as needed
   });
 
   const [refh2, inViewh2] = useInViewRIO({
     /* Optional options */
-    threshold: 0.5,
+    threshold: 0.7,
     // "initialInView": true,
-    rootMargin: '-100px 0px', // Adjust as needed
+    rootMargin: '-70px 0px', // Adjust as needed
   });
 
   const [ refbtn, inViewbtn] = useInViewRIO({
     /* Optional options */
-    threshold: 0.5,
+    threshold: 0.8,
     // "initialInView": true,
     rootMargin: '-100px 0px', // Adjust as needed
 
