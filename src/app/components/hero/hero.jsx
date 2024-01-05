@@ -10,7 +10,7 @@ import './hero.scss'
 const Hero = () => {
     // const [blur, setBlur] = useState(false);
     const refFM = useRef(null);
-    const isInViewFM = useInViewFM(refFM,{once:true});
+    const isInViewFM = useInViewFM(refFM);
     const linkUrl = 'https://calendly.com/aliumairkhan/30min';
 
     // const textRef = useRef(null);
@@ -42,7 +42,7 @@ const Hero = () => {
     /* Optional options */
     threshold: 0.5,
     // "initialInView": true,
-    rootMargin: '-70px 0px', // Adjust as needed
+    rootMargin: '-100px 50px', // Adjust as needed
   });
 
   const [refh2, inViewh2] = useInViewRIO({
@@ -69,11 +69,11 @@ const Hero = () => {
   });
 
   const blurAnimationh2 = useSpring({
-    filter: inViewh2 ? 'blur(0px)' : 'blur(5px)', // Adjust the blur amount
+    filter: inViewh2 ? 'blur(0px)' : 'blur(3px)', // Adjust the blur amount
   });
 
   const blurAnimationbtn = useSpring({
-    filter: inViewbtn ? 'blur(0px)' : 'blur(5px)', // Adjust the blur amount
+    filter: inViewbtn ? 'blur(0px)' : 'blur(3px)', // Adjust the blur amount
   });
 
   
@@ -88,7 +88,7 @@ const Hero = () => {
           style={{
           //   height: "100vh",
           background: isInViewFM ? 'black' : '#033F73',          //   color: inpm run devsInView ? 'white' : 'black',
-          transition: "5s background",
+          transition: "10s background",
           }}
           className='hero'
     >

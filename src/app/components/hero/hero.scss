@@ -20,7 +20,7 @@
     // border: 1px solid #ccc; /* Add a border for better visibility */
     .hero__h1{
         font-size:8.8rem;
-        color:rgb(12, 62, 188);
+        color:rgb(252, 252, 1);
         padding:1rem;
         text-align:center;
         // margin:2rem;
@@ -33,7 +33,7 @@
         @media (max-width:70rem){
             font-size:4rem;
             hyphens:auto;
-            color:rgb(13, 66, 199);
+            color:rgb(252, 252, 3);
         }
         @keyframes fromLeft {
             0% {
@@ -47,7 +47,7 @@
     }
     .hero__h2{
         font-size:3.2rem;
-        color:rgb(87, 87, 87);
+        color:rgb(255, 254, 254);
         padding:1rem;
         line-height:1.6;
         // width:50%;
