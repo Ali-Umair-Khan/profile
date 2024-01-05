@@ -14,7 +14,7 @@ const Abilities = () => {
         ref={ref}
           style={{
         //   height: "100vh",
-          background: isInView ? "aliceblue" : "lightcyan",
+          background: isInView ? "aliceblue" : "#D4D8E6",
           color: isInView ? 'black' : 'gray',
           transition: "10s background",
           }}

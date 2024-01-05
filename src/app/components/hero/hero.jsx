@@ -1,27 +1,106 @@
-import {useInView} from 'framer-motion';
-import {useRef} from 'react';
+'use client'
+import {motion, useInView as useInViewFM} from 'framer-motion';
+import { useInView as useInViewRIO } from 'react-intersection-observer';
+import {useRef,useState,useEffect} from 'react';
+import { useSpring, animated } from 'react-spring';
+
+
 
 import './hero.scss'
 const Hero = () => {
-    
-    const ref = useRef(null);
-    const isInView = useInView(ref);
-
+    // const [blur, setBlur] = useState(false);
+    const refFM = useRef(null);
+    const isInViewFM = useInViewFM(refFM,{once:true});
     const linkUrl = 'https://calendly.com/aliumairkhan/30min';
 
+    // const textRef = useRef(null);
+//     useEffect(() => {
+//     const observer = new IntersectionObserver(
+//       (entries) => {
+//         entries.forEach((entry) => {
+//           if (!entry.isIntersecting) {
+//             // Text is leaving or has left the screen
+//             setBlur(true);
+//           } else {
+//             // Text is back on the screen
+//             setBlur(false);
+//           }
+//         });
+//       },
+//       { threshold: 0.4 } // Adjust the threshold as needed
+//     );
+
+//     if (ref.current) {
+//       observer.observe(ref.current);
+//     }
+
+//     // Cleanup the observer when the component unmounts
+//     return () => observer.disconnect();
+//   }, [ref]);
+
+  const [ refh1, inViewh1] = useInViewRIO({
+    /* Optional options */
+    threshold: 0.8,
+    // "initialInView": true,
+    rootMargin: '-100px 0px', // Adjust as needed
+  });
+
+  const [refh2, inViewh2] = useInViewRIO({
+    /* Optional options */
+    threshold: 1,
+    // "initialInView": true,
+    rootMargin: '-100px 0px', // Adjust as needed
+  });
+
+  const [ refbtn, inViewbtn] = useInViewRIO({
+    /* Optional options */
+    threshold: 1,
+    // "initialInView": true,
+    rootMargin: '-100px 0px', // Adjust as needed
+
+  });
+
+  console.log('inViewh1:', inViewh1);
+  console.log('inViewh2:', inViewh2);
+  console.log('inViewbtn:', inViewbtn);
+
+  const blurAnimationh1 = useSpring({
+    filter: inViewh1 ? 'blur(0px)' : 'blur(5px)', // Adjust the blur amount
+  });
+
+  const blurAnimationh2 = useSpring({
+    filter: inViewh2 ? 'blur(0px)' : 'blur(5px)', // Adjust the blur amount
+  });
+
+  const blurAnimationbtn = useSpring({
+    filter: inViewbtn ? 'blur(0px)' : 'blur(5px)', // Adjust the blur amount
+  });
+
+  
+    
+    
     return(
-    <div 
-          ref={ref}
+    <div
+        //   initial={{ background: 'radial-gradient(circle at 50% 50%, transparent 0%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0) 60%)' }}
+        //   animate={{ background: 'radial-gradient(circle at 50% 50%, transparent 0%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0) 60%)' }}
+        //   transition={{ duration: 10 }} 
+          ref={refFM}
           style={{
           //   height: "100vh",
-          background: isInView ? "whitesmoke" : "aliceblue",
-          //   color: isInView ? 'white' : 'black',
-          transition: "10s background",
+          background: isInViewFM ? 'black' : '#808B96',          //   color: inpm run devsInView ? 'white' : 'black',
+          transition: "20s background",
           }}
-          className='hero'>
-        <h1 className='hero__h1'>I engage with people in web Development and Design.</h1>
-        <h2 className='hero__h2'>I am available for inquiries regarding robust & clean web design and development.</h2>
-        <a href={linkUrl} target="_blank" rel="noopener noreferrer"><button className='hero__btn'>Book a free discovery call.</button></a>
+          className='hero'
+    >
+      <animated.h1 ref={refh1} className='hero__h1' style={blurAnimationh1}>
+        I engage with people in web Development and Design.
+      </animated.h1>
+        {/* <h1 ref={refh1} className={`hero__h1 ${!inViewh1 ? 'blurred' : ''}`} style={{filter: !inViewh1 ? 'blur(5px)' : 'none'}}>I engage with people in web Development and Design.</h1> */}
+      <animated.h2 ref={refh2} className='hero__h2' style={blurAnimationh2}>
+        I am available for inquiries regarding robust & clean web design and development.      
+      </animated.h2>
+        {/* <h2 ref={refh2} className={`hero__h2 ${!inViewh2 ? 'blurred' : ''}`} style={{filter: !inViewh2 ? 'blur(5px)' : 'none'}}>I am available for inquiries regarding robust & clean web design and development.</h2> */}
+        <a href={linkUrl} target="_blank" rel="noopener noreferrer"><animated.button ref={refbtn} className='hero__btn' style={blurAnimationbtn}>Book a free discovery call.</animated.button></a>
     </div>
     )
 }
@@ -77,3 +156,43 @@ export default Hero
 // }
 
 // export default FaqComponent
+
+// import React from 'react';
+// import { useSpring, animated } from 'react-spring';
+// import { useInView } from 'react-intersection-observer';
+
+// const Hero = () => {
+//   const [refh1, inViewh1] = useInView({
+//     threshold: 0.8,
+//   });
+
+//   const [refh2, inViewh2] = useInView({
+//     threshold: 0.8,
+//   });
+
+//   const [refbtn, inViewbtn] = useInView({
+//     threshold: 0.8,
+//   });
+
+//   const blurAnimation = useSpring({
+//     filter: inViewh1 ? 'blur(0px)' : 'blur(5px)', // Adjust the blur amount
+//   });
+
+//   return (
+//     <div className='hero'>
+//       <animated.h1 ref={refh1} className={`hero__h1`} style={blurAnimation}>
+//         I engage with people in web Development and Design.
+//       </animated.h1>
+//       <animated.h2 ref={refh2} className={`hero__h2`} style={blurAnimation}>
+//         I am available for inquiries regarding robust & clean web design and development.
+//       </animated.h2>
+//       <a href='https://calendly.com/aliumairkhan/30min' target='_blank' rel='noopener noreferrer'>
+//         <animated.button ref={refbtn} className={`hero__btn`} style={blurAnimation}>
+//           Book a free discovery call.
+//         </animated.button>
+//       </a>
+//     </div>
+//   );
+// };
+
+// export default Hero;
