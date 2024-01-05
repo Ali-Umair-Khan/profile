@@ -40,21 +40,21 @@ const Hero = () => {
 
   const [ refh1, inViewh1] = useInViewRIO({
     /* Optional options */
-    threshold: 0.8,
+    threshold: 0.0.5,
     // "initialInView": true,
     rootMargin: '-100px 0px', // Adjust as needed
   });
 
   const [refh2, inViewh2] = useInViewRIO({
     /* Optional options */
-    threshold: 1,
+    threshold: 0.5,
     // "initialInView": true,
     rootMargin: '-100px 0px', // Adjust as needed
   });
 
   const [ refbtn, inViewbtn] = useInViewRIO({
     /* Optional options */
-    threshold: 1,
+    threshold: 0.5,
     // "initialInView": true,
     rootMargin: '-100px 0px', // Adjust as needed
 
@@ -88,7 +88,7 @@ const Hero = () => {
           style={{
           //   height: "100vh",
           background: isInViewFM ? 'black' : '#808B96',          //   color: inpm run devsInView ? 'white' : 'black',
-          transition: "20s background",
+          transition: "10s background",
           }}
           className='hero'
     >
