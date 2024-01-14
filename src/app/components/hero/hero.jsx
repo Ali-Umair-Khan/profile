@@ -65,15 +65,15 @@ const Hero = () => {
   console.log('inViewbtn:', inViewbtn);
 
   const blurAnimationh1 = useSpring({
-    filter: inViewh1 ? 'blur(0px)' : 'blur(5px)', // Adjust the blur amount
+    filter: inViewh1 ? 'blur(0px)' : 'blur(1px)', // Adjust the blur amount
   });
 
   const blurAnimationh2 = useSpring({
-    filter: inViewh2 ? 'blur(0px)' : 'blur(3px)', // Adjust the blur amount
+    filter: inViewh2 ? 'blur(0px)' : 'blur(1px)', // Adjust the blur amount
   });
 
   const blurAnimationbtn = useSpring({
-    filter: inViewbtn ? 'blur(0px)' : 'blur(3px)', // Adjust the blur amount
+    filter: inViewbtn ? 'blur(0px)' : 'blur(1px)', // Adjust the blur amount
   });
 
   
@@ -87,7 +87,7 @@ const Hero = () => {
           ref={refFM}
           style={{
           //   height: "100vh",
-          background: isInViewFM ? 'black' : '#514E4E',          //   color: inpm run devsInView ? 'white' : 'black',
+          background: isInViewFM ? 'black' : 'darkgray',          //   color: inpm run devsInView ? 'white' : 'black',
           transition: "10s background",
           }}
           className='hero'
