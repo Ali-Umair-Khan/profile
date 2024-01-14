@@ -33,7 +33,6 @@ const Contact = () => {
                 <img src='/banner/github3.png' alt='github'/>
                 <img src='/banner/github3.png' alt='github'/>
             <a href={linkUrl} target="_blank" rel="noopener noreferrer"related to><img src='/banner/github3.png' alt='github'/></a> */}
-
             </ul>
         </section>
     )
