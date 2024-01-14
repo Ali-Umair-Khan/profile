@@ -1,4 +1,4 @@
-
+'use client'
 import {useInView} from 'framer-motion';
 import {useRef} from 'react';
 
@@ -14,8 +14,8 @@ const Abilities = () => {
         ref={ref}
           style={{
         //   height: "100vh",
-          background: isInView ? "aliceblue" : "#D4D8E6",
-          color: isInView ? 'black' : 'gray',
+          background: isInView ? "black" : "white",
+          color: isInView ? 'white' : 'gray',
           transition: "10s background",
           }}
         className='abilities'>

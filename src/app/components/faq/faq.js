@@ -22,8 +22,8 @@ const FaqComponent = () =>{
           ref={ref}
           style={{
         //   height: "100vh",
-          background: isInView ? "white" : "lightgray",
-          color: isInView ? 'black' : 'gray',
+          background: isInView ? "black" : "darkgray",
+          color: isInView ? 'white' : 'gray',
           transition: "10s background, 5s color",
           }}
           className='faq'

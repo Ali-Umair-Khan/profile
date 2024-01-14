@@ -187,12 +187,12 @@ nav{
             transition: border-bottom 2s;
             /* font-family:var(--font-family-3); */
             // color:rgba(5, 64, 159, 0.9);
-            color:white;
+            color:rgb(252, 252, 1);
             // color: rgb(14, 35, 35);
             // white-space:no-wrap;
             cursor: pointer;
             &:hover {
-                border-bottom-color: #030c2b;
+                border-bottom-color: #fcfcfd;
             }
             @media (max-width:76rem){
                 // margin-top:3rem;

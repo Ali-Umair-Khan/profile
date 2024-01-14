@@ -40,7 +40,7 @@ const ImageSlider = () => {
     ref={ref}
           style={{
 //         //   height: "100vh",
-          background: isInView ? "white" : "lavender",
+          background: isInView ? "black" : "white",
           // color: isInView ? 'black' : 'gray',
           transition: "10s background",
           }}

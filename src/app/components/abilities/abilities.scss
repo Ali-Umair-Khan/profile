@@ -10,6 +10,7 @@
     grid-template-columns:1fr 1fr;
     justify-content: start;
     max-width:99vw;
+    color:white;
     // align-items:space-between;
     // place-items:center;
     @media (max-width:70rem){
@@ -17,10 +18,11 @@
     }
     .abilities__left{
         align-self:center;
-        justify-self:center;
+        justify-self:flex-end;
         font-size:8rem;
         font-weight:600;
-        color:grey;
+        margin-left:4rem;
+        // color:grey;
         @media (max-width:70rem){
             font-size:4.8rem;
             padding-inline:1rem;
