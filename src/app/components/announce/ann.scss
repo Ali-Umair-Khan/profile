@@ -19,9 +19,9 @@
         font-size:1.6rem;
         font-style: italic;
         font-weight:200;
-        @media (max-width:70rem){
+        @media (max-width:30rem){
             padding:0.5rem 1rem;
-            font-size:1.2rem;
+            font-size:1rem;
         }
     }
     .ann__btn{
@@ -32,9 +32,9 @@
         border: 2px solid none;
         border: 0 solid transparent;
         font-weight:400;
-        @media (max-width:70rem){
-            padding:0.5rem 1rem;
-            font-size:1.2rem;
+        @media (max-width:30rem){
+            padding:0.5rem 0.2rem;
+            font-size:1rem;
         }
     }
 }
