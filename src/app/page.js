@@ -58,7 +58,7 @@ const App = () => {
   return (
     <main className="main">
       {componentsImport.map((Component, index) => (
-          <Component />
+          <Component key={index} />
       ))}
     </main>
   );
