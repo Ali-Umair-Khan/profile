@@ -19,6 +19,10 @@
         font-size:1.6rem;
         font-style: italic;
         font-weight:200;
+        @media (max-width:70rem){
+            padding:0.5rem 1rem;
+            font-size:1.2rem;
+        }
     }
     .ann__btn{
         background-color: white;
@@ -26,7 +30,11 @@
         border-radius:5px;
         padding:0.8rem 1.6rem;
         border: 2px solid none;
-        border: 0cap solid transparent;
+        border: 0 solid transparent;
         font-weight:400;
+        @media (max-width:70rem){
+            padding:0.5rem 1rem;
+            font-size:1.2rem;
+        }
     }
 }
