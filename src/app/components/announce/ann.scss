@@ -1,0 +1,32 @@
+
+.ann{
+    background-color:rgb(2, 2, 81);
+    background-image: url("/banner/bannerj.jpg");
+    // background-image: url('https://assets-global.website-files.com/5bddf05…/64639ea…_Cta-BG.webp');
+    // background-color:rgb(2, 2, 81);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:5rem;
+    display:flex;
+    // flex-direction:column;
+    justify-content:center;
+    place-items:center;
+    column-gap: 2rem;
+    .ann__h1{
+        color:rgb(255, 254, 254);
+        padding:1rem 2rem;
+        font-family: var(--font-family-3);
+        font-size:1.6rem;
+        font-style: italic;
+        font-weight:200;
+    }
+    .ann__btn{
+        background-color: white;
+        color:black;
+        border-radius:5px;
+        padding:0.8rem 1.6rem;
+        border: 2px solid none;
+        border: 0cap solid transparent;
+        font-weight:400;
+    }
+}

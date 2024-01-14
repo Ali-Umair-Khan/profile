@@ -4,6 +4,7 @@ import { Element } from 'react-scroll';
 import { useSpring, animated } from 'react-spring';
 
 // Import your components here
+import Announce from './components/announce/ann';
 import ResponsiveMenu from './components/navbar/resMenu2';
 import Hero from './components/hero/hero.jsx';
 import Abilities from './components/abilities/abilities.jsx';
@@ -13,10 +14,10 @@ import Carousel from './components/imageCarousel3/imageCarousel3.jsx';
 import FaqComponent from './components/faq/faq';
 import Skills from './components/skills/skills';
 import Footer from './components/footer/footer';
-
 import './page.module.css';
 
 const componentsImport = [
+  Announce,
   ResponsiveMenu,
   Hero,
   () => (
