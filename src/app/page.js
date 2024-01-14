@@ -14,6 +14,8 @@ import Carousel from './components/imageCarousel3/imageCarousel3.jsx';
 import FaqComponent from './components/faq/faq';
 import Skills from './components/skills/skills';
 import Footer from './components/footer/footer';
+import Contact from './components/contact/contact';
+
 import './page.module.css';
 
 const componentsImport = [
@@ -38,6 +40,12 @@ const componentsImport = [
     </Element>
   ),
   Skills,
+  () => (
+    <Element name="ann">
+      <Contact className="card" />
+    </Element>
+  ),
+  // Contact,
   Footer,
 ];
 

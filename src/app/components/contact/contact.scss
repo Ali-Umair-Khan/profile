@@ -1,0 +1,36 @@
+
+
+.contact{
+    display:flex;
+    flex-direction: column;
+    place-items:center;
+    gap:1rem;
+    color: white;
+    background-color:rgb(1, 7, 51);
+    padding:1.5rem 1.5rem;
+    padding-top:3rem;
+    // margin:1rem;
+    max-width:99vw;
+    .contact__h1{
+        font-size:2.4rem;
+        max-width:80vw;
+        @media (max-width:30rem){
+            font-size:1.6rem;
+        }
+    }
+    .contact__socials{
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        gap:2rem;
+            a {
+                color:white;
+                img{
+                    width:3rem;
+                    height:3rem;
+                    // color:white;
+                }
+            }
+
+    }
+}
