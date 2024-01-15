@@ -14,6 +14,28 @@
     .contact__h1{
         font-size:2.4rem;
         max-width:80vw;
+        .contact__h1-short{
+            .text__btn{
+                display:inline;
+                background-color: transparent;
+                padding:0.5rem;
+                outline:none;
+                color:white;
+                border: solid 2px transparent;
+                font-size:2rem;
+            }
+        }
+        .contact__h1-full{
+            .text__btn{
+                display:inline;
+                background-color: transparent;
+                padding:0.5rem;
+                outline:none;
+                color:white;
+                border: solid 2px transparent;
+                font-size:1.8rem;
+            }
+        }
         @media (max-width:30rem){
             font-size:1.6rem;
         }
