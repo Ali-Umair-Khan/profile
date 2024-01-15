@@ -21,8 +21,8 @@ const Contact = () => {
     return(
         <section className='contact'>
             <h1 className='contact__h1'>
-            I specialize in the MERN/Next stack and am actively looking for collaboration on challenges related to these technologies, particularly those found on freelancing platforms. 
-            I am also open to joining projects focusing on the meticulous development of web applications, sophisticated landing pages, and websites. 
+            My tech stack is MERN/Next. I am actively looking for collaboration on challenges related to these techs, particularly those found on platforms. 
+            I am also open to joining projects focusing on the meticulous development of web apps, sophisticated landing pages, and websites. 
             If you share similar interests, I am eager to explore potential collaborative opportunities.
             </h1>
             <ul className='contact__socials'>

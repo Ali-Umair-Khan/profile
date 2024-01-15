@@ -116,7 +116,7 @@ nav{
         display:flex;
         justify-content:center;
         align-items: center;
-        color:rgb(252, 252, 5);
+        color:rgb(253, 253, 204);
         /* flex-wrap:wrap; */
         gap:1rem;
         /* width:100%; */
@@ -187,7 +187,7 @@ nav{
             transition: border-bottom 2s;
             /* font-family:var(--font-family-3); */
             // color:rgba(5, 64, 159, 0.9);
-            color:rgb(252, 252, 1);
+            color:rgb(252, 252, 197);
             // color: rgb(14, 35, 35);
             // white-space:no-wrap;
             cursor: pointer;
@@ -196,7 +196,7 @@ nav{
             }
             @media (max-width:76rem){
                 // margin-top:3rem;
-                color:#ffd105;
+                color:#fdf2c2;
                 // color: darkcyan;
             }
             
@@ -206,7 +206,7 @@ nav{
             position:absolute;
             top:0rem;
             right:1rem;
-            color:rgb(249, 204, 3);
+            color:rgb(254, 244, 202);
             cursor: pointer;
             font-size: 1.5rem;
             a {
@@ -225,7 +225,7 @@ nav{
         position:absolute;
         top:2rem;
         right:2rem;
-        color:rgb(252, 240, 5);
+        color:rgb(251, 249, 200);
         cursor: pointer;
         font-size: 1.5rem;
         @media (min-width:30rem) and (max-width:40rem){
