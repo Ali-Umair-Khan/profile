@@ -26,7 +26,7 @@ const Contact = () => {
     return(
         <section className='contact'>
             <h1 className='contact__h1'>
-             {!readMore  ? <div className='contact__h1-short'><h3 style={{display:'inline', fontSize:'2.4rem'}}>{text.slice(0,36)}...</h3> <button className='text__btn' onClick={()=>setReadMore(!readMore)}>Read more</button></div> : <div className='contact__h1-full'><h3 style={{display:'inline', fontSize:'2.4rem'}}>{text}</h3> <button className='text__btn' onClick={()=>setReadMore(!readMore)}>Read less</button> </div> }
+             {!readMore  ? <div className='contact__h1-short'><h3 style={{display:'inline', fontSize:'2.4rem'}}>{text.slice(0,(text.length)*0.5)}...</h3> <button className='text__btn' onClick={()=>setReadMore(!readMore)}>Read more</button></div> : <div className='contact__h1-full'><h3 style={{display:'inline', fontSize:'2.4rem'}}>{text}</h3> <button className='text__btn' onClick={()=>setReadMore(!readMore)}>Read less</button> </div> }
             </h1>
             <ul className='contact__socials'>
                 <a href={X__link} target="_blank" rel="noopener noreferrer"><img src='/banner/twitter4.png' alt='twitter'/></a>
