@@ -121,6 +121,46 @@ nav{
         gap:1rem;
         /* width:100%; */
         /* width:90vw; */
+        .navbar__menu-item{
+            position: relative;
+            .dropdown-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: -50%;
+                background-color: #333; /* Adjust the background color */
+                padding: 1rem;
+                @media (max-width:70rem){
+                    left:0%;
+                }
+              }
+              &:hover .dropdown-menu {
+                display:flex;
+                flex-direction:column;
+                // place-items:center;
+                justify-content:space-between;
+                align-items:center;
+                // place-content: center;
+                min-width:12vw;
+                padding:1rem 2rem;
+                z-index:1000;
+                p{
+                    border-bottom: 2px solid #0f0f0f;
+                    border-bottom-width: 100%;
+                    // width:100%;
+                    padding:1rem;
+                    transition: border-bottom 2s;
+                    // align-self:flex-end;
+                &:hover{
+                    border-bottom-color: #fcfcfd;
+                    // border-bottom-width: 100%;
+
+                    // width:100%;
+                }
+
+                }
+              }
+        }
         & > * {
             padding:0.5rem;
         }

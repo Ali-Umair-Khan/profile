@@ -72,18 +72,37 @@ const ResponsiveMenu = () => {
                           <a onClick={handleMenuItemClick}>Who I am</a>
                       </Link>
                     </li> */}
-                    <li onClick={handleMenuItemClick}>
-                      <Link to='work'  smooth={true} duration={500}>
+                    <li onClick={handleMenuItemClick} className='navbar__menu-item'>
+                      <Link to='work'  smooth={true} duration={1000}>
                           <a onClick={handleMenuItemClick}>Work <FontAwesomeIcon icon={faHurricane} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a>
-                      </Link></li>
-                    <li onClick={handleMenuItemClick}>
-                      <Link to='services'  smooth={true} duration={500}>
-                          <a onClick={handleMenuItemClick}>Services <FontAwesomeIcon icon={faWrench} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a>
+                          <div className='dropdown-menu'>
+                            <p>page1</p>
+                            <p>page2</p>
+                            <p>page3</p>
+                            <p>page4</p>
+                          </div>
                       </Link>
                     </li>
-                    <li onClick={handleMenuItemClick}>
-                      <Link to='charging' smooth={true} duration={500}>
+                    <li onClick={handleMenuItemClick} className='navbar__menu-item'>
+                      <Link to='services'  smooth={true} duration={1000}>
+                          <a onClick={handleMenuItemClick}>Services <FontAwesomeIcon icon={faWrench} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a>
+                          <div className='dropdown-menu'>
+                            <p>page1</p>
+                            <p>page2</p>
+                            <p>page3</p>
+                            <p>page4</p>
+                          </div>
+                      </Link>
+                    </li>
+                    <li onClick={handleMenuItemClick} className='navbar__menu-item'>
+                      <Link to='charging' smooth={true} duration={1000}>
                           <a onClick={handleMenuItemClick}>Charging <FontAwesomeIcon icon={faDollarSign} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a>
+                          <div className='dropdown-menu'>
+                            <p>page1</p>
+                            <p>page2</p>
+                            <p>page3</p>
+                            <p>page4</p>
+                          </div>
                       </Link>
                     </li>
                     <li onClick={handleMenuItemClick}><a href={linkUrl} target="_blank" rel="noopener noreferrer" onClick={handleMenuItemClick}>Contact <FontAwesomeIcon icon={faAddressBook} style={{ fontSize: '1.5rem', marginLeft:'0.5rem'}} /></a></li>
